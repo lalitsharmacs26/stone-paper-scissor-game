@@ -1,5 +1,4 @@
 alert("JavaScript Connected!");
-```javascript
 let playerScore = 0;
 let computerScore = 0;
 
@@ -251,4 +250,4 @@ restartBtn.addEventListener("click", function () {
         "block";
 
 });
-```
+
