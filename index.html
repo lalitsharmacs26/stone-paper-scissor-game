@@ -1,1 +1,151 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stone Paper Scissor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <!-- GAME SCREEN -->
+        <div id="gameScreen">
+
+            <h1>🪨 Stone Paper Scissor 📄</h1>
+
+            <p class="subtitle">
+                Beat the computer in 5 rounds!
+            </p>
+
+            <div class="round">
+                Round <span id="round">1</span> / 5
+            </div>
+
+
+            <!-- CHOICES -->
+
+            <div class="choices">
+
+                <button class="choice-btn" data-choice="1">
+                    📄
+                    <span>PAPER</span>
+                </button>
+
+                <button class="choice-btn" data-choice="2">
+                    🪨
+                    <span>STONE</span>
+                </button>
+
+                <button class="choice-btn" data-choice="3">
+                    ✂️
+                    <span>SCISSOR</span>
+                </button>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div class="battle">
+
+                <div class="player-box">
+
+                    <h2>PLAYER</h2>
+
+                    <div id="playerChoice" class="emoji">
+                        ❓
+                    </div>
+
+                </div>
+
+
+                <div class="vs">
+                    VS
+                </div>
+
+
+                <div class="computer-box">
+
+                    <h2>COMPUTER</h2>
+
+                    <div id="computerChoice" class="emoji">
+                        ❓
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div id="result">
+                Choose your move!
+            </div>
+
+
+            <!-- SCORE -->
+
+            <div class="score-board">
+
+                <div class="score-box">
+                    <p>PLAYER</p>
+                    <h2 id="playerScore">0</h2>
+                </div>
+
+                <div class="score-box">
+                    <p>COMPUTER</p>
+                    <h2 id="computerScore">0</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- GAME OVER SCREEN -->
+
+        <div id="gameOver">
+
+            <h1>🏆 GAME OVER 🏆</h1>
+
+            <h2 id="finalResult">
+                DRAW
+            </h2>
+
+            <div class="final-score">
+
+                <p>
+                    Player Score:
+                    <strong id="finalPlayerScore">0</strong>
+                </p>
+
+                <p>
+                    Computer Score:
+                    <strong id="finalComputerScore">0</strong>
+                </p>
+
+            </div>
+
+
+            <button id="restartBtn">
+                🔄 PLAY AGAIN
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
 
