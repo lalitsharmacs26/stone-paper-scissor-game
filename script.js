@@ -1,3 +1,4 @@
+alert("JavaScript Connected!");
 ```javascript
 let playerScore = 0;
 let computerScore = 0;
